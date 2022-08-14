@@ -1,4 +1,4 @@
-export interface Provider {
+export interface Contact {
     id: string;
     name: string;
     logo: string;

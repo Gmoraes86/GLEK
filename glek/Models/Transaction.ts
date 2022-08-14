@@ -1,4 +1,4 @@
-import { Account, Category, Installment, PaymentType, Provider, SplitItems } from ".";
+import { Account, Category, Installment, PaymentType, Contact, SplitItems } from ".";
 
 export interface Transaction {
     id: string;
@@ -12,7 +12,7 @@ export interface Transaction {
     operationType: 'CREDIT' | 'DEBIT';
     category?: Category;
     account: Account;
-    provider: Provider;
+    contact: Contact;
     installments?: Installment[]; 
     split?: SplitItems[];
     status: 'PENDING' | 'PAID' | 'CANCELED' | 'PROVISIONED' | 'EXPIRED';       
