@@ -3,6 +3,7 @@ import Typography from '.';
 import ThemeProvider from '../../../Themes';
 
 export default {
+  title: 'Base/Typography',
   component: Typography,  
   argTypes: {
     variant: {
